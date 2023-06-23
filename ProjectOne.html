@@ -25,23 +25,26 @@
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li>
-                                    <li class="current">
-                                        <a href="#">Personal Projects</a>
-                                        <ul>
-                                            <li><a href="ProjectOne.html">Prey and Predator</a></li>
-                                            <li><a href="ProjectTwo.html">Prodecural Tree</a></li>
-                                            <li><a href="ProjectThree.html">Color Switch</a></li>
-                                            <li><a href="ProjectFour.html">Knight and Mystery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#WorkExperience">Work Experience</a>
-                                        <ul>
-                                            <li><a href="#">Awen</a></li>
-                                            <li><a href="#">Gameshastra</a></li>
-                                        </ul>
-                                    </li>
-    
+									<a href="#PP">Personal Projects</a>
+									<ul>
+										<li><a href="ProjectOne.html">Prey and Predator</a></li>
+										<li><a href="ProjectTwo.html">Prodecural Tree</a></li>
+										<li><a href="ProjectThree.html">Color Switch</a></li>
+										<li><a href="ProjectFour.html">Knight and Mystery</a></li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="index.html#WorkExperience">Work Experience & Education</a>
+									<ul>
+										<li><a href="#">Awen</a></li>
+										<li><a href="#">Goldsmiths, University of London</a></li>
+										<li><a href="#">Gameshastra</a></li>
+										<li><a href="#">Bharathiar University of Coimbatore</a></li>
+									</ul>
+								</li>
+
+								<li><a href="#footer"> Contact</a></li>
 							</ul>
 						</nav>
 
@@ -50,69 +53,74 @@
 			<!-- Main -->
 				<section id="main">
 					<div class="container">
-
-						<!-- Content -->
 							<article class="box post">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="PreyAndPredator/WRuvwV.png" alt="" /></a>
 								<header>
 									<h2>Prey and Predator</h2>
-									<p>Lorem ipsum dolor sit amet feugiat</p>
 								</header>
+									<h3>Overview</h3>
 								<p>
-									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-									Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
-									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
+									Overview: The prey and predator system is depends on the dependence one on another. I have divided the whole system in to four parts and 
+									implemented them into as a each individual part. Those are:<br>
+									1. Movement.<br>
+									2. Resource consumption.<br>
+									3. Reproduction.<br>
+									4. Evolution.<br>
 								</p>
-								<p>
-									Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-									a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-									placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-									eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-									elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
-								</p>
+
+								<h3>Simulation Video</h3>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLsyvDWwjkTqtOmqAiTzzfHspTAztB-udL" 
+								frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+
 								<section>
-									<header>
-										<h3>Something else</h3>
-									</header>
-									<p>
-										Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-										placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus.
-										Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-										placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
-									</p>
-									<p>
-										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus.
-									</p>
+									<h3>Code design</h3>
+									I have divided code in to components which are implemented by OOPS and Game Programming Patterns. For instance: <br>
+
+									Movement --> MoveTowards, Core is a target position.<br>
+									Reproduction --> Coroutine, Inheritance for different objects.<br>
+									Radius --> Line Renderer --> MathF.Sin and Cos (Degrees to radians)<br>
+									Collision --> Physics.OverLap --> Follow Target <br>
+									Destroy --> List , Collider hit which reset the object position to start location<br>
+									Evolution -->  State Design Pattern, to define states which are  move, evolve, old  and reproduce.<br>
+								
+								
 								</section>
+								
 								<section>
-									<header>
-										<h3>So in conclusion ...</h3>
-									</header>
-									<p>
-										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-										Maecenas sagittis convallis justo vel mattis.
-									</p>
+									<h3>GitHub</h3>
 								</section>
 							</article>
 
 					</div>
 				</section>
 		</div>
+
+		<!-- Footer -->
+		<section id="footer">
+			<div class="container">
+					<div class="col-2 col-1-medium">
+						<section>
+							<ul class="social">
+								<li><a class="icon brands fa-github" href="https://github.com/SravanGameDev"><span class="label">GitHub</span></a></li>
+								<li><a class="icon brands fa-linkedin" href="https://www.linkedin.com/in/sravangamdev/"><span class="label">LinkedIn</span></a></li>
+								<li><a class="icon brands fa-steam" href="#"><span class="label">Steam</span></a></li>
+								<li><a class="icon brands fa-playstation" href="#"><span class="label">playstation</span></a></li>
+							</ul>
+							<ul class="contact">
+								<li>
+									<h3>Address</h3>
+									<p>Blackheath, London</p>
+								</li>
+								<li>
+									<h3>Mail</h3>
+									<p><a href="#">kairamkondasravankumar1@gmail.com</a></p>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+		</section>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
