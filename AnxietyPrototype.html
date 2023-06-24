@@ -24,7 +24,7 @@
 						<nav id="nav">
 							<ul>
 								<li ><a href="index.html">Home</a></li>
-								<li class="current">
+								<li >
 									<a href="#PP">Personal Projects</a>
 									<ul>
 										<li><a href="ProjectOne.html">Prey and Predator</a></li>
@@ -34,6 +34,12 @@
 									</ul>
 								</li>
 
+								<li class="current">
+									<a href="#PPs">Professional Projects</a>
+									<ul>
+										<li><a href="AnxietyPrototype.html">Anxiety Prototype</a></li>
+									</ul>
+								</li>
 								
 								<li>
 									<a href="index.html#WorkExperience">Work Experience & Education</a>
@@ -54,52 +60,40 @@
 			<!-- Main -->
 				<section id="main">
 					<div class="container">
-							<article class="box post">
-								<a href="#" class="image featured"><img src="PreyAndPredator/WRuvwV.png" alt="" /></a>
-								<header>
-									<h2>Prey and Predator</h2>
-								</header>
-									<h3>Overview</h3>
-								<p>
-									Overview: The prey and predator system is depends on the dependence one on another. I have divided the whole system in to four parts and 
-									implemented them into as a each individual part. Those are:<br>
-									1. Movement.<br>
-									2. Resource consumption.<br>
-									3. Reproduction.<br>
-									4. Evolution.<br>
-								</p>
+						<article class="box post">
+							<a href="#" class="image featured"><img src="ProfessionalProjects/oculus-quest-2-14368-1631656107.jpg" alt="" /></a>
+							<header>
+								<h2>Anxiety Prototype</h2>
+							</header>
+								<h3>Overview</h3>
+							<p>
+								Overview: The prey and predator system is depends on the dependence one on another. I have divided the whole system in to four parts and 
+								implemented them into as a each individual part. Those are:<br>
+								1. Movement.<br>
+								2. Resource consumption.<br>
+								3. Reproduction.<br>
+								4. Evolution.<br>
+							</p>
 
-								<h3>Simulation Video</h3>
-								
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/H67V4S42S4o?autoplay=1&modestbranding=1?mute=1" 
-								title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-								
-								<section>
-									<h3>Code design</h3>
-									I have divided code in to components which are implemented by OOPS and Game Programming Patterns. For instance: <br>
+							<section>
+								<h3>Code design</h3>
+								I have divided code in to components which are implemented by OOPS and Game Programming Patterns. For instance: <br>
 
-									Movement --> MoveTowards, Core is a target position.<br>
-									Reproduction --> Coroutine, Inheritance for different objects.<br>
-									Radius --> Line Renderer --> MathF.Sin and Cos (Degrees to radians)<br>
-									Collision --> Physics.OverLap --> Follow Target <br>
-									Destroy --> List , Collider hit which reset the object position to start location<br>
-									Evolution -->  State Design Pattern, to define states which are  move, evolve, old  and reproduce.<br>
-								
-								
-								</section>
-								
-								<section>
-									<h3>GitHub</h3>
-								</section>
-							</article>
-
+								Movement --> MoveTowards, Core is a target position.<br>
+								Reproduction --> Coroutine, Inheritance for different objects.<br>
+								Radius --> Line Renderer --> MathF.Sin and Cos (Degrees to radians)<br>
+								Collision --> Physics.OverLap --> Follow Target <br>
+								Destroy --> List , Collider hit which reset the object position to start location<br>
+								Evolution -->  State Design Pattern, to define states which are  move, evolve, old  and reproduce.<br>
+							</section>
+						</article>
 					</div>
 				</section>
 		</div>
 
 		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
+			<section id="footer">
+				<div class="container">
 					<div class="col-2 col-1-medium">
 						<section>
 							<ul class="social">
@@ -121,7 +115,7 @@
 						</section>
 					</div>
 				</div>
-		</section>
+			</section>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
