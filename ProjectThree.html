@@ -13,19 +13,15 @@
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
-
 			<!-- Header -->
 				<section id="header">
-
-					<!-- Logo -->
-						<h1><a href="index.html">Sravan Kumar Kairamkonda</a></h1>
-
+					<h1><a href="index.html">Sravan Kumar Kairamkonda</a></h1>
 					<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li class="current">
-								<a href="#PP">Personal Projects</a>
+								<a href="index.html#PP">Personal Projects</a>
 								<ul>
 									<li><a href="ProjectOne.html">Prey and Predator</a></li>
 									<li><a href="ProjectTwo.html">Prodecural Tree</a></li>
@@ -35,7 +31,7 @@
 							</li>
 
 							<li>
-								<a href="#PPs">Professional Projects</a>
+								<a href="index.html#PPs">Professional Projects</a>
 								<ul>
 									<li><a href="AnxietyPrototype.html">Anxiety Prototype</a></li>
 								</ul>
@@ -54,52 +50,53 @@
 							<li><a href="#footer"> Contact</a></li>
 						</ul>
 					</nav>
-
-			</section>
+				</section>
 
 			<!-- Main -->
-			<section id="main">
-				<div class="container">
+				<section id="main">
+					<div class="container">
 						<article class="box post">
+							
 							<a href="#" class="image featured"><img src="ColorSwitch/6VzjtC.gif" alt="" /></a>
 							<header>
 								<h2>Color Matters</h2>
 							</header>
+							<section>
 								<h3>Overview</h3>
 							<p>
-								
-
-							<h3>Simulation Video</h3>
-							
+								The whole core logic of the game is based on color theory, the player need to acquire the wall color and pass through to collect key.<br>
+								Design: I used unity's pro-builder to build different shapes in the level and created albedo material.<br>
+								Code: The logic is checking the color on collision component when collided with the object, switch back to color with coroutine<br>
+							</p>
+						</section>
+						<section>
+							<h3>Gameplay Video</h3>
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/tBbsDAX_nyw?autoplay=1&modestbranding=1?mute=1" 
 							title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-							
-							<section>
-								<h3>Code design</h3>
-							
-							
-							</section>
-							
+						</section>
 							<section>
 								<h3>GitHub</h3>
+								<a href="https://github.com/SravanGameDev/ColorMatters/tree/main/Assets/Scripts" target="_blank"> Code Link </a>
 							</section>
-						</article>
 
-				</div>
-			</section>
+						</article>
+					</div>
+				</section>
 		</div>
 
 		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
+			<section id="footer">
+				<div class="container">
 					<div class="col-2 col-1-medium">
 						<section>
+
 							<ul class="social">
 								<li><a class="icon brands fa-github" href="https://github.com/SravanGameDev"><span class="label">GitHub</span></a></li>
 								<li><a class="icon brands fa-linkedin" href="https://www.linkedin.com/in/sravangamdev/"><span class="label">LinkedIn</span></a></li>
 								<li><a class="icon brands fa-steam" href="#"><span class="label">Steam</span></a></li>
 								<li><a class="icon brands fa-playstation" href="#"><span class="label">playstation</span></a></li>
 							</ul>
+
 							<ul class="contact">
 								<li>
 									<h3>Address</h3>
@@ -110,10 +107,12 @@
 									<p><a href="#">kairamkondasravankumar1@gmail.com</a></p>
 								</li>
 							</ul>
+
 						</section>
 					</div>
 				</div>
-		</section>
+			</section>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
