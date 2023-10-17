@@ -12,91 +12,98 @@
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
 			<!-- Header -->
-				<section id="header">
-					<h1><a href="index.html">Sravan Kumar Kairamkonda</a></h1>
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-							
-								<li class="current">
-									<a href="index.html#PP">Personal Projects</a>
-									<ul>
-										<li><a href="ProjectOne.html">Prey and Predator</a></li>
-										<li><a href="ProjectTwo.html">Prodecural Tree</a></li>
-										<li><a href="ProjectThree.html">Color Switch</a></li>
-										<li><a href="ProjectFour.html">Knight and Mystery</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="index.html#WorkExperience">Contact</a>
-								</li>
+			<section id="header">
+				<h1><a href="index.html">Sravan Kumar Kairamkonda</a></h1>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+						
+							<li class="current">
+								<a href="index.html#PP">Personal Projects</a>
+								<ul>
+									<li><a href="ProjectOne.html">Prey and Predator</a></li>
+									<li><a href="ProjectTwo.html">Prodecural Tree</a></li>
+									<li><a href="ProjectThree.html">Color Switch</a></li>
+									<li><a href="ProjectFour.html">Knight and Mystery</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="index.html#WorkExperience">Contact</a>
+							</li>
 
-								<li>
+							<li>
 
-									<a href="https://docs.google.com/document/d/1d7ZnUc8WJDLrWYCQuk7paUEuUKx8ryky8qXGL3G1mAo/edit?usp=sharing" target="_blank"> Resume </a>
-								</li>
-							</ul>
-						</nav>
-				</section>
+								<a href="https://docs.google.com/document/d/1d7ZnUc8WJDLrWYCQuk7paUEuUKx8ryky8qXGL3G1mAo/edit?usp=sharing" target="_blank"> Resume </a>
+							</li>
+						</ul>
+					</nav>
+			</section>
 
 			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<article class="box post">
-							<header>
-								<h2>Prey and Predator</h2>
-							</header>
-
-							<section>
-							<h3>Overview</h3>
+			<section id="main">
+				<div class="container">
+					<article class="box post">
+						<header><h2>Prey and Predator</h2></header>
+						<section><h3>Overview</h3>
 							<p>
-								Overview: The prey and predator system is depends on the dependence one on another. I have divided the whole system in to four parts and 
+								The prey and predator system is depends on the dependence one on another. I have divided the whole system in to four parts and 
 								implemented them into as a each individual part. Those are:<br>
 								1. Movement.<br>
 								2. Resource consumption.<br>
 								3. Reproduction.<br>
 								4. Evolution.<br>
 							</p>
-							</section>
-							<h3>GitHub</h3>
-								<a href="https://github.com/SravanGameDev/PreyAndPredator/tree/main/Assets/Scripts" target="_blank"> Code Link </a>
-								
-								<section>
-									<h3>Simulation Video</h3>
-									<div class="auto-resizable-iframe">
-										<div>
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/H67V4S42S4o?autoplay=1&modestbranding=1&mute=1" 
-											title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-											picture-in-picture; web-share" allowfullscreen></iframe><br>
-										</div>
+						</section>
+
+						<section><h3>Project and Tools</h3>
+							<p><b>Project link:</b>
+								<a href="https://github.com/SravanGameDev/PreyAndPredator/tree/main/Assets/Scripts" target="_blank"> click here for the Github project </a>
+								<br>
+								I used <b>Unity Engine, Visual Studio and GitHub</b> for the development of the project.
+							</p>
+						</section>
+						<section><h3>Simulation Video</h3>
+							<p>The simulation start with spawing the prey and predator and they move around with the border of the screen. Prey which is in green color, 
+								get destroyed and spawned when collided with predator. Predator, which is in red color, has a radius where it will chases the prey with in radius.
+								This simulation is endless when it is played. Predator has dialouge text where it give state of it behaviour.
+								<div class="auto-resizable-iframe">
+									<div>
+										<iframe width="480" height="300" style="border:2px solid red;" src="https://www.youtube.com/embed/H67V4S42S4o?autoplay=1&modestbranding=1&mute=1" 
+										title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+										picture-in-picture; web-share" allowfullscreen></iframe><br>
 									</div>
-								</section>
+								</div>
+							</p>
+						</section>
+
+						<section><h3>Responsibilities</h3>
+							<p>I designed code and logic for the simulation, and built systems around prey and predator. <br>
+								I built systems for simulation where everything changes according to the behaviour other system<br>
+								I developed dialouge system for the predator.
+							</p>
+
+
+						</section>
+						<section><h3>Code design</h3>	
+							<p>I have divided code in to components which are implemented by OOPS and Game Programming Patterns. <br> For instance, <br>
+								<b>Movement:</b> MoveTowards, Core is a target position.<br>
+								<b>Reproduction:</b> Coroutine, Inheritance for different objects.<br>
+								<b>Radius:</b> Line Renderer  MathF.Sin and Cos (Degrees to radians)<br>
+								<b>Collision:</b> Physics.OverLap( ) range Follow Target <br>
+								<b>Destroy:</b> List , Collider hit which reset the object position to start location<br>
+								<b>Evolution:</b> State Design Pattern, to define states which are  move, evolve, old  and reproduce.<br>
+							</p>
+						</section>
 								
-								<section>
-									<h3>Code design</h3>
-									<p>I have divided code in to components which are implemented by OOPS and Game Programming Patterns. For instance: <br>
-										Movement --> MoveTowards, Core is a target position.<br>
-										Reproduction --> Coroutine, Inheritance for different objects.<br>
-										Radius --> Line Renderer --> MathF.Sin and Cos (Degrees to radians)<br>
-										Collision --> Physics.OverLap --> Follow Target <br>
-										Destroy --> List , Collider hit which reset the object position to start location<br>
-										Evolution -->  State Design Pattern, to define states which are  move, evolve, old  and reproduce.<br>
-									</p>
-								</section>
-								
-								<section>
-									
-								</article>
-							</section>
-							</div>
-				</section>
+					</article>
+				</div>
+			</section>
 				
 			<!-- Footer -->
-				<section id="footer">
-					
-				</section>
-		</div>
-		
+			<section id="footer">
+				<p> <b>" Have a good day, Keep smiling! "</b></p>
+			</section>
+
 		</div>
 				
 		<!-- Scripts -->
